@@ -47,6 +47,10 @@ class BookController extends Controller {
         return redirect('/books');
     }
 
+    public function show($id) {
+        return redirect('/books');
+    }
+
     public function search(Request $request) {
         return redirect('/books')
             ->with(['title'  => $request->title,
@@ -84,7 +88,7 @@ class BookController extends Controller {
               $this->_insert($data[0],$data[1]);
         }
         
-        return redirect('/books')
+        return redirect('/')
             ->with('message', 'Records have been imported successfully');
 
     }

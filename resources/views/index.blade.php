@@ -119,11 +119,11 @@
                             <tbody>
                                 @foreach ($books as $book)
                                     <tr>
-                                        <td class="table-text"><div>{!! $book->title !!}</div></td>
-                                        <td class="table-text"><div>{!! $book->author !!}</div></td>
+                                        <td class="table-text"><div>{{ $book->title }}</div></td>
+                                        <td class="table-text"><div>{{ $book->author }}</div></td>
 
                                         <td>
-                                            <form action="/books/{!! $book->id !!}" method="POST">
+                                            <form action="/books/{{ $book->id }}" method="POST">
                                                 {{ csrf_field() }}
                                                 {{ method_field('DELETE') }}
 

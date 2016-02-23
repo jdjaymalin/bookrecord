@@ -88,7 +88,7 @@ class BookController extends Controller {
               $this->_insert($data[0],$data[1]);
         }
         
-        return redirect('/')
+        return redirect('/books')
             ->with('message', 'Records have been imported successfully');
 
     }

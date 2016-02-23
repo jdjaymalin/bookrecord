@@ -19,7 +19,7 @@
                         </div>
                     @endif
 
-                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <form action="/books/upload" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="book-title" class="control-label">CSV File</label>
                             <input type="file" name="bookrecord" id="book-title" class="form-control">
